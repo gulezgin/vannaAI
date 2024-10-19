@@ -1,0 +1,5 @@
+Table Name: exchange_rates Purpose of the Table: The exchange_rates table is designed to store exchange rates between various global currencies and the Turkish Lira (TRY). 
+Columns and Descriptions: currency_code: Description: A unique code that identifies the currency. This follows the ISO 4217 currency codes for standardized currency representation. 
+Examples: 'USD' (United States Dollar), 'EUR' (Euro), 'TRY' (Turkish Lira), 'BTC' (Bitcoin). Purpose: Acts as the primary key for the table, ensuring that each currency is represented only once. 
+rate_to_try: Description: The exchange rate of the currency against the Turkish Lira (TRY). This shows how much one unit of the specified currency is worth in TRY. 
+Data Type: DECIMAL(20,8) to maintain high precision for both large and small exchange rate values. Examples: 0.02922930 for USD (1 USD = 0.02922930 TRY), 0.00000043 for BTC (1 Bitcoin = 0.00000043 TRY). Purpose: Provides a direct conversion rate from any supported currency to Turkish Lira.
